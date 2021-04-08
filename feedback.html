@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Feedback</title>	
+		<link rel="stylesheet" type="text/css" href="css/feedback.css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" href="css/aperture_24123.ico">
+		<link rel="apple-touch-icon" href="css/aperture_24123.png">
+		<link rel="icon" sizes="192x192" href="css/aperture_24123.png">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Pacifico|Patua+One|Acme|Amarnath&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+			var s1,s2,s3,s4,s5,s6;
+				s1=document.getElementsByClassName('Question');
+				s2=document.getElementsByClassName('Website');
+				s3=document.getElementsByClassName('Product');
+				s4=document.getElementsByClassName('Suggestion');
+				s5=document.getElementsByClassName('Compliments');
+				s6=document.getElementsByClassName('Other');
+			function quest_btn(){
+				s1[0].style.display="block";
+				s2[0].style.display="none";
+				s3[0].style.display="none";
+				s4[0].style.display="none";
+				s5[0].style.display="none";
+				s6[0].style.display="none";
+			}
+			function web_btn(){
+				s1[0].style.display="none";
+				s2[0].style.display="block";
+				s3[0].style.display="none";
+				s4[0].style.display="none";
+				s5[0].style.display="none";
+				s6[0].style.display="none";
+			}
+			function product_btn(){
+				s1[0].style.display="none";
+				s2[0].style.display="none";
+				s3[0].style.display="block";
+				s4[0].style.display="none";
+				s5[0].style.display="none";
+				s6[0].style.display="none";
+			}
+			function suggestion_btn(){
+				s1[0].style.display="none";
+				s2[0].style.display="none";
+				s3[0].style.display="none";
+				s4[0].style.display="block";
+				s5[0].style.display="none";
+				s6[0].style.display="none";
+			}
+			function comp_btn(){
+				s1[0].style.display="none";
+				s2[0].style.display="none";
+				s3[0].style.display="none";
+				s4[0].style.display="none";
+				s5[0].style.display="block";
+				s6[0].style.display="none";
+			}
+			function other_btn(){
+				s1[0].style.display="none";
+				s2[0].style.display="none";
+				s3[0].style.display="none";
+				s4[0].style.display="none";
+				s5[0].style.display="none";
+				s6[0].style.display="block";
+			}
+		</script>
+	</head>	
+
+	<body>
+		<header>
+		<div>
+			<div class="header1">
+				<img src="css/final1.png" alt="logo" style="width:250px;height:80px;">
+				<br><br><br>
+				
+				<p>Your Guide To Camera Lenses</p>
+			</div>
+			<div class="header">
+			<!-- header section -->
+			<div class="header2"><a href="#" class="fa fa-bars"></a></div>
+			<div class="header2 linkage"><a href="login.html">LOGIN</a></div>
+			<div class="header2 linkage"><a href="about.html">ABOUT</a></div>
+			<div class="header2 linkage"><a href="home.php">HOME</a></div>
+
+			
+			</div>
+		</div>
+		</header>
+
+		<h1 class="feedback_title">Feedback Form</h1>
+		<div class="line1">We would love to hear your thoughts, concerns or problems with anything on website so we can improve!</div>
+
+		<div class="line2">Choose a subject and give us your opinion:</div>
+		<button class="subject" onclick="quest_btn()"><div class="fa fa-question-circle" style="font-size:24px;"></div><br>Question</button>
+		<button class="subject" onclick="web_btn()"><div class="fa fa-th-large" style="font-size:24px;"></div><br>Website</button>
+		<button class="subject" onclick="product_btn()"><div class="fa fa-shopping-bag" style="font-size:24px;"></div><br>Products</button>
+		<button class="subject" onclick="suggestion_btn()"><div class="fa fa-quote-left" style="font-size:24px;"></div><br>Suggestions</button>
+		<button class="subject" onclick="comp_btn()"><div class="fa fa-comments-o" style="font-size:24px;"></div><br>Compliments</button>
+		<button class="subject" onclick="other_btn()"><div class="fa fa-hand-o-right" style="font-size:24px;"></div><br>Other</button>
+
+		<div class="Question" style="display:none;">
+			<form action="quest.php" method="GET">
+				<h3>Ask a Question ...</h3>
+				<textarea name="quest_txt" rows="5" cols="100" placeholder="Type your question here..."></textarea>
+				<br>
+				<button class="btn1">Submit</button>
+			</form>
+		</div>
+
+		<div class="Website" style="display:none;">
+			<form action="webfeedback.php" method="GET">
+				<h3>How according to you is the website design?</h3>
+				<input type="radio" value="OK" name="design">Its OK
+				<input type="radio" value="Good" name="design">Good
+				<input type="radio" value="Very Good" name="design">Very Good
+				<input type="radio" value="Awesome" name="design">Awesome
+
+				<h3>Is the content in website useful to you?</h3>
+				<input type="radio" value="yes" name="content">Yes
+				<input type="radio" value="no" name="content">No
+				<input type="radio" value="maybe" name="content">Maybe
+
+				<h3>Did the content in website helped you in finding the correct lenses?</h3>
+				<input type="radio" value="yes" name="find">Yes
+				<input type="radio" value="no" name="find">No
+				<input type="radio" value="maybe" name="find">Maybe
+
+				<h3>Give your rating about overall website</h3>
+				<input type="radio" value="OK" name="overall">Its OK
+				<input type="radio" value="Good" name="overall">Good
+				<input type="radio" value="Very Good" name="overall">Very Good
+				<input type="radio" value="Awesome" name="overall">Awesome
+				<br>
+				<button class="btn1">Submit</button>
+			</form>
+		</div>
+
+		<div class="Product" style="display:none;">
+			<form action="productview.php" method="GET">
+				<h3>How according to you are the product(lens) description in the website?</h3>
+				<input type="radio" value="OK" name="design">Its OK
+				<input type="radio" value="Good" name="design">Good
+				<input type="radio" value="Very Good" name="design">Very Good
+				<input type="radio" value="Awesome" name="design">Awesome
+
+				<h3>Is the content on product page useful to you?</h3>
+				<input type="radio" value="yes" name="content">Yes
+				<input type="radio" value="no" name="content">No
+				<input type="radio" value="maybe" name="content">Maybe
+
+				<h3>Were the lenses available on the buy page?</h3>
+				<input type="radio" value="yes" name="find">Yes
+				<input type="radio" value="no" name="find">No
+				<input type="radio" value="maybe" name="find">Maybe
+
+				<h3>Give your rating about overall product if you have buyed any</h3>
+				<input type="radio" value="OK" name="overall">Its OK
+				<input type="radio" value="Good" name="overall">Good
+				<input type="radio" value="Very Good" name="overall">Very Good
+				<input type="radio" value="Awesome" name="overall">Awesome
+				<br>
+				<button class="btn1">Submit</button>
+			</form>
+		</div>
+		<div class="Suggestion" style="display:none;">
+			<form action="suggestion.php" method="GET">
+				<h3>Give your Suggestions if any...</h3>
+				<textarea name="s_txt" rows="5" cols="100" placeholder="Type your suggestions here..."></textarea>
+				<br>
+				<button class="btn1">Submit</button>
+			</form>
+		</div>
+		<div class="Compliments" style="display:none;">
+			<form action="compliment.php" method="GET">
+				<h3>We would like to hear from you about website...</h3>
+				<textarea name="comp_txt" rows="5" cols="100" placeholder="Type your compliements here..."></textarea>
+				<br>
+				<button class="btn1">Submit</button>
+			</form>
+		</div>
+		<div class="Other" style="display:none;">
+			<form action="other.php" method="GET">
+				<h3>Any other thing which you would like to share please feel free to share it...</h3>
+				<textarea name="other_txt" rows="5" cols="100" placeholder="Type here..."></textarea>
+				<br>
+				<button class="btn1">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>

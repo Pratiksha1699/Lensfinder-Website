@@ -1,0 +1,205 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<title>About Us</title>
+	<link rel="shortcut icon" href="css/aperture_24123.ico">
+	<link rel="apple-touch-icon" href="css/aperture_24123.png">
+	<link rel="icon" sizes="192x192" href="css/aperture_24123.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="manifest.json">
+	<style> 
+            .gfg { 
+                font-size:40px; 
+                font-weight:bold; 
+                color:#009900; 
+                margin-left:20px; 
+            } 
+            .showmap { 
+                margin-left:47%; 
+                margin-top:2%;
+                margin-bottom:2%;
+	
+            } 
+            p { 
+                font-size:20px; 
+                margin-left:20px; 
+            } 
+        </style> 
+        <script type="text/javascript">
+          function init() {
+            // create map and set center and zoom level
+            var map = new L.map('mapid');
+            map.setView([47.000,-120.554],13);
+            
+            var mapboxTileUrl = 'PASTE YOUR URL INSIDE THESE SINGLE QUOTES';
+            
+            L.tileLayer(mapboxTileUrl, {
+                attribution: 'Background map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+            }).addTo(map);         
+          }  
+        </script>
+</head>
+<body>
+	
+		<div class="header1">
+				<img src="css/final1.png" alt="logo" style="width:250px;height:80px;">
+				<br><br><br>
+				
+				<p>Your Guide To Camera Lenses</p>
+			</div>
+		<div class="header">
+			<!-- header section -->
+			<div class="header2"><a href="#" class="fa fa-bars"></a></div>
+			<div class="header2 linkage"><a href="feedback.html">FEEDBACK</a></div>
+			<div class="header2 linkage"><a href="login.html">LOGIN</a></div>
+			<div class="header2 linkage"><a href="home.php">HOME</a></div>
+			
+			</div>
+		</div>
+		</div>
+
+		<div class="abt">
+			<h2 style="text-shadow:2px 2px 1px grey; color:black">About Us</h2>
+		</div>
+		<div class="img-lens1">
+		<img src="css/pic1.png" alt="A lens to capture fine images" id="img-rounded"></img></div>
+		<div class="lens_text"><p class="para">LensFinder website shows some variety of lenses to buy and search for them using different aspects.This makes it very easy to find the correct lenses as per the user's necessity</p>
+		</div>
+		</div>
+		
+		<div class="abt_right">
+			<h3>We will help you find the lens you need!</h3>
+		</div>
+		<div class="lens_help"><p class="para">LensFinder will help you find appropriate lenses as per your application and make the best use out of it.</p></div>
+		<img src="css/lens_img.png" alt="A range of camera's with different dimensions." style="float:right; width:100%; margin-top:10px;"></img>
+		<div class="abt">
+			<h3>Why Lenses are so Important?</h3>
+		</div>
+		<div class="imp_lens">
+			<details>
+				<summary>Angle of view</summary>
+				<p class="para"><mark>Lens</mark> provide the angle of view which is crucial for any photography.</p>
+			</details>
+			<details>
+				<summary>Background blur</summary>
+				<p class="para">The amount of blur produced on background depends on <mark>lens</mark>.</p>
+			</details>
+			<details>
+				<summary>Distortion</summary>
+				<p class="para">Distortion of an image or photograph depends on the <mark>lens</mark> which is used.</p>
+			</details>
+		</div>
+		<div class="abt_right">
+			<h3>Learning is the Key</h3>
+		</div>
+		<div class="vid">
+			<video controls loop autoplay width="40%" preload>
+				<source src="RotatingLens1Videvo.mp4" type="video/mp4">
+				<source src="RotatingLens1Videvo.mov" type="video/mp4">
+			A video of telephoto rotating lens
+			</video>
+		</div>
+		<div class="suggest"><strong><em>For any suggestions for our website or any queries regarding lenses Feel free to contact us.</em></strong></div>
+
+		<!-- Bottom of the page for footer and contact information -->
+
+		<div class="bottom" id="abt">
+		
+			<hr width="90%">
+			<div class="bottom_left">
+				
+				<h3>About Us:</h3>
+				Contact Us: 9920353609
+			</div>
+			<div class="bottom_right">
+			<h3>Follow Us on:</h3>
+			<!-- adding social media icons -->
+
+			<a href="https://www.facebook.com/jason.mendes.98" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/jason_s_mendes/" class="fa fa-instagram"></a>
+			</div>
+				<button class= "showmap" type="button" onclick="mapfun()"> 
+            	Show Map</button> 
+        		<div id="demo2" style="width: 96%; height: 10px; display:none; margin-left:2%"> 
+              
+        		</div> 
+		<script>
+			function mapfun(){
+				var x=document.getElementById("demo2");
+				var y=document.getElementById("abt");
+				var z=document.getElementsByClassName("showmap");
+				if(x.style.display==="none"){
+					x.style.display="block";
+					z[0].innerHTML="Hide Map";
+					getlocation();
+					}
+				else {
+					x.style.display="none";
+					y.style.height="230px";	
+					z[0].innerHTML="Show Map";
+				}
+			}
+		</script>
+        		<script src="https://maps.google.com/maps/api/js?sensor=false"> 
+              
+        		</script> 
+        		<script type="text/javascript"> 
+        		function getlocation(){ 
+            	if(navigator.geolocation){ 
+                	navigator.geolocation.getCurrentPosition(showLoc, errHand); 
+            		} 
+		var abt,demo;
+                		abt=document.getElementById('abt');
+		demo=document.getElementById('demo2');
+               		demo.style.height="300px";
+		abt.style.height="500px"; 
+        		} 
+        function showLoc(pos){ 
+            latt = pos.coords.latitude; 
+            long = pos.coords.longitude; 
+            var lattlong = new google.maps.LatLng(latt, long); 
+            var OPTions = { 
+                center: lattlong, 
+                zoom: 10, 
+                mapTypeControl: true, 
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
+            } 
+            var mapg = new google.maps.Map(document.getElementById("demo2"), OPTions); 
+            var markerg =  
+               new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"}); 
+        } 
+          
+        function errHand(err) { 
+            switch(err.code) { 
+                case err.PERMISSION_DENIED: 
+                    result.innerHTML = "The application doesn't have the permission"  +  
+                               "to make use of location services" 
+                    break; 
+                case err.POSITION_UNAVAILABLE: 
+                    result.innerHTML = "The location of the device is uncertain" 
+                    break; 
+                case err.TIMEOUT: 
+                    result.innerHTML = "The request to get user location timed out" 
+                    break; 
+                case err.UNKNOWN_ERROR: 
+                    result.innerHTML = "Time to fetch location information exceeded"+ 
+                      "the maximum timeout interval" 
+                    break; 
+            } 
+        } 
+        </script>
+
+				
+			
+			
+		</div>
+		<footer>
+		<div class="footer">
+			<center><h4>Copyright &copy; LensFinder.com | All Rights Reserved</h4></center>
+		</div>
+		</footer>
+</body>
+</html>

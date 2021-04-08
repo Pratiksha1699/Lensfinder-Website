@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/buypage.css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Buypage</title>
+		<style>
+			header2{float:right;
+			margin:10px 20px;}
+		</style>
+		<link rel="shortcut icon" href="css/aperture_24123.ico">
+		<link rel="apple-touch-icon" href="css/aperture_24123.png">
+		<link rel="icon" sizes="192x192" href="css/aperture_24123.png">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="manifest" href="manifest.json">
+        <style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+
+<style> 
+            .gfg { 
+                font-size:40px; 
+                font-weight:bold; 
+                color:#009900; 
+                margin-left:20px; 
+            } 
+            .showmap { 
+                margin-left:47%; 
+                margin-top:2%;
+                margin-bottom:2%;
+	
+            } 
+            p { 
+                font-size:20px; 
+                margin-left:20px; 
+            } 
+        </style> 
+        <script type="text/javascript">
+          function init() {
+            // create map and set center and zoom level
+            var map = new L.map('mapid');
+            map.setView([47.000,-120.554],13);
+            
+            var mapboxTileUrl = 'PASTE YOUR URL INSIDE THESE SINGLE QUOTES';
+            
+            L.tileLayer(mapboxTileUrl, {
+                attribution: 'Background map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+            }).addTo(map);         
+          }  
+        </script>
+        
+	</head>
+
+    <body>
+        <!-- navbar and logo -->
+        <header>
+        <div>
+            <div class="header1">
+                <img src="css/final1.png" alt="logo" style="width:250px;height:80px;">
+                <br><br><br>
+                
+                <p>Your Guide To Camera Lenses</p>
+            </div>
+            <div class="header">
+            <!-- header section -->
+            <div class="header2"><a href="#">=</a></div>
+            <a><div class="header2"><a href="feedback.html">FEEDBACK</a></div></a>
+            <a><div class="header2"><a href="login.html">LOGIN</a></div><a>
+            <a><div class="header2"><a href="about.html">ABOUT</a></div></a>
+            
+            </div>
+        </div>
+        </header>
+        <br><br><br>
+
+
+<div class="mac">Laowa 24mm</div>
+<br><br>
+<div class="gallery1" style="width:60%;">
+    <div class="imgdiv imgdiv1"><img class="macimg" src="css/laowa2.jpg" width="250px" height="180px"/><div class="caption1"><div class="detail"></div></div></div>
+    <div class="imgdiv imgdiv2"><img class="macimg" src="css/laowa1.jpg" width="250px" height="150px"/><div class="caption1"><div class="detail"></div></div></div>
+    <div class="imgdiv imgdiv3"><img class="macimg" src="css/laowa3.jpg" width="180px" height="110px"/><div class="caption1"><div class="detail"><br><br></div></div></div><br>
+    <div class="imgdiv imgdiv4"><img class="macimg" src="css/laowa5.jpg" width="300px" height="200px"/><div class="caption1"><div class="detail"></div></div></div>
+    <div class="imgdiv imgdiv5"><img class="macimg" src="css/laowa6.jpg" width="390px" height="260px"/><div class="caption1"><div class="detail"></div></div></div>
+</div>
+<br><br>
+<div class="Mac_content">
+    Described as "weird but genius," the Sony E-mount Laowa 24mm f/14 Probe from Venus Optics is a truly unique lens designed for close-up shooting. Distinguished by its long, slender lens barrel, this macro lens provides a 2:1 maximum magnification with a 1.5' minimum focusing distance and a close 0.8" minimum working distance. Even with such a close working distance, the lens measures 1.3' long, placing you at a comfortable distance to photograph nearby subjects. 
+</div>
+<br><br>
+<div class="mac">Shopping Portals</div>
+
+<div class="Mac_content">
+     <img src="css/amazon.png" width="20px" height="20px"/> :<a href="https://www.amazon.in/Camera-Lenses/b?ie=UTF8&node=1389199031"> Click to buy from Amazon </a>
+        <br><br>
+     <img src="css/flipkart.jpg" width="20px" height="20px"/> :<a href="https://www.flipkart.com/camera-accessories/camera-lenses/pr?sid=jek,6l2,e9y"> Click to buy from Flipkart </a>
+</div>
+<br><br>
+<div class="mac">Photos taken by this lens</div>
+<div class="gallery1" style="width:60%;">
+    <div class="imgdiv imgdiv1"><img class="macimg" src="css/flower.jpg" width="250px" height="180px"/><div class="caption1"><div class="detail"></div></div></div>
+    <div class="imgdiv imgdiv2"><img class="macimg" src="css/fly.jpg" width="200px" height="160px"/><div class="caption1"><div class="detail"></div></div></div>
+    <div class="imgdiv imgdiv3"><img class="macimg" src="css/blueflower.jpg" width="200px" height="120px"/><div class="caption1"><div class="detail"><br><br></div></div></div><br>
+    <div class="imgdiv imgdiv4"><img class="macimg" src="css/greyflower.jpg" width="300px" height="200px"/><div class="caption1"><div class="detail"></div></div></div>
+    <div class="imgdiv imgdiv5"><img class="macimg" src="css/greyfly.jpg" width="350px" height="230px"/><div class="caption1"><div class="detail"></div></div></div>
+</div>
+<br><br>
+
+<button type="button" onclick="loadXMLDoc()" id="collection">Compare Lenses</button>
+<br><br>
+<table id="demo"></table>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "detail.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>NAME</th><th>BUILD</th><th>AUTOFOCUS</th><th>APERTURE</th><th>min focal length</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("BUILD")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("AUTOFOCUS")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("APERTURE")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("MIN_FOCAL_LENGTH")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+<br><br>
+<div class="Mac_content">
+     *Wide-angle prime is designed for full-frame Sony E-mount mirrorless cameras, however can also be used with APS-C models where it will provide a 36mm equivalent focal length.
+     *Unique macro lens design offers a greater-than-life-size 2:1 maximum magnification along with a minimum focusing distance of 1.5' and a working distance of just 0.8".
+     *The long, tubular lens barrel contributes to producing a distinct bug-eye perspective and, despite the short working distance, the length of the lens barrel places the camera at a comfortable shooting distance.
+     *Wide-angle 24mm focal length affords greater depth of field and more surrounding detail than traditional telephoto macro designs, which tend to isolate subject matter with shallow depth of field.
+</div>
+<br><br>
+
+
+
+
+
+
+
+
+
+        <!-- Bottom of the page for footer and contact information -->
+
+        <div class="bottom" id="abt">
+		
+			<hr width="90%">
+			<div class="bottom_left">
+				
+				<h3>About Us:</h3>
+				Contact Us: 9920353609
+			</div>
+			<div class="bottom_right">
+			<h3>Follow Us on:</h3>
+			<!-- adding social media icons -->
+
+			<a href="https://www.facebook.com/jason.mendes.98" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/jason_s_mendes/" class="fa fa-instagram"></a>
+			</div>
+				<button class= "showmap" type="button" onclick="mapfun()"> 
+            	Show Map</button> 
+        		<div id="demo2" style="width: 96%; height: 10px; display:none; margin-left:2%"> 
+              
+        		</div> 
+                
+	<script src="https://maps.google.com/maps/api/js?sensor=false"> 
+        <script>
+			function mapfun(){
+				var x=document.getElementById("demo2");
+				var y=document.getElementById("abt");
+				var z=document.getElementsByClassName("showmap");
+				if(x.style.display==="none"){
+					x.style.display="block";
+					z[0].innerHTML="Hide Map";
+					getlocation();
+					}
+				else {
+					x.style.display="none";
+					y.style.height="230px";	
+					z[0].innerHTML="Show Map";
+				}
+			}
+		</script>
+        		<script src="https://maps.google.com/maps/api/js?sensor=false"> 
+              
+        		</script> 
+        		<script type="text/javascript"> 
+        		function getlocation(){ 
+            	if(navigator.geolocation){ 
+                	navigator.geolocation.getCurrentPosition(showLoc, errHand); 
+            		} 
+		var abt,demo;
+                		abt=document.getElementById('abt');
+		demo=document.getElementById('demo2');
+               		demo.style.height="300px";
+		abt.style.height="500px"; 
+        		} 
+        function showLoc(pos){ 
+            latt = 19.243355; 
+            long = 72.855690; 
+            var lattlong = new google.maps.LatLng(latt, long); 
+            var OPTions = { 
+                center: lattlong, 
+                zoom: 17, 
+                mapTypeControl: true, 
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
+            } 
+            var mapg = new google.maps.Map(document.getElementById("demo2"), OPTions); 
+            var markerg =  
+               new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"}); 
+        } 
+          
+        function errHand(err) { 
+            switch(err.code) { 
+                case err.PERMISSION_DENIED: 
+                    result.innerHTML = "The application doesn't have the permission"  +  
+                               "to make use of location services" 
+                    break; 
+                case err.POSITION_UNAVAILABLE: 
+                    result.innerHTML = "The location of the device is uncertain" 
+                    break; 
+                case err.TIMEOUT: 
+                    result.innerHTML = "The request to get user location timed out" 
+                    break; 
+                case err.UNKNOWN_ERROR: 
+                    result.innerHTML = "Time to fetch location information exceeded"+ 
+                      "the maximum timeout interval" 
+                    break; 
+            } 
+        } 
+        </script>
+
+            </div>
+         
+
+
+        <footer>
+        <div class="footer">
+                <center><h4>Copyright &copy; LensFinder.com | All Rights Reserved</h4></center>
+        
+        </div>
+        </footer>
+    
+    </body>
+</html>
+
+

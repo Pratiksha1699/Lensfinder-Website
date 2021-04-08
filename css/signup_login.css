@@ -1,0 +1,51 @@
+.login{
+	width:350;
+	background:linear-gradient( 120deg, #981EF5,white,#981EF5);
+	margin-top:50px;
+	color:#000;
+	margin-left:300px;
+	border-radius:7px;
+	border:2px solid white;
+	padding:10px;
+	animation:perspective 2s linear 1;
+	
+}
+
+.box{
+	border-radius: 5px;
+	height:40px;
+	border-left: 3px solid #123456;
+	border-bottom: 3px solid #123456;
+	margin-left: 25px;
+	width:300px;
+	
+}
+
+.loginbtn{
+	width:70px;
+	height:40px;
+	background:linear-gradient(90deg, blue, white, blue);
+	border-radius:5px;
+	
+}
+.signup{
+	width:350;
+	background:linear-gradient( 120deg, magenta,white,magenta);
+	margin-top:50px;
+	color:#000;
+	margin-left:300px;
+	border-radius:7px;
+	border:2px solid white;
+	padding:10px;
+	animation:anime 2s linear 1;
+}
+@keyframes perspective{
+0%{transform: rotateY(0deg);}
+80%{transform: rotateX(340deg);}
+100%{transform:rotateY(90deg);}
+
+}
+@keyframes anime{
+0%{transform: rotateY(0deg);}
+100%{transform:rotateY(270deg);transform:translateX(270px);}
+}

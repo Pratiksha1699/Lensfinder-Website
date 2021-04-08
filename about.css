@@ -1,0 +1,248 @@
+.header1{ 
+	width:27%;
+	padding-left:25px;
+	float:left;
+}
+p{
+	margin-top:-35px;
+	margin-bottom:50px;
+	color:#123456;
+}
+.header2{
+	float:right;
+	padding:10px 50px;
+	
+}
+
+.header{
+	background-color:white;
+	float:right;
+	margin:10px 0px 0px 0px;
+	border-radius:20px 0px 0px 20px;
+	font-size:18px;
+	-webkit-animation: fadein .2s;
+	animation-name:animate1;
+	animation-duration:1s;
+	animation-delay:0s;
+}
+.header2:hover{background:linear-gradient(#ddd,#fff,#ddd);}
+.para{
+	margin-top:20px;
+}
+.abt{
+	background-color:#eee;
+	border-radius:20px 20px 20px 20px;
+	margin:10px 0px 0px 10px;
+	clear:both;
+	width:300px;
+	padding:0px 0px 0px 100px;
+	color:#123456;
+	height:40px;
+	
+}
+#img-rounded{
+	border-radius:50px 50px 50px 50px;
+	width:55%;
+}
+.img-lens1{
+	margin:30px 0px 15px 50px;
+	
+}
+
+.lens_text{
+	background-color:#eee;
+	border-radius:20px 20px 20px 20px;
+	margin-left: 30px;
+	width:55%;
+	padding:0px 15px 0px 70px;
+	font-size:18px;
+		
+}
+.abt_right{
+	background-color:#eee;
+	border-radius:20px 20px 20px 20px;
+	margin:20px 10px 10px 0px;
+	float:right;
+	width:45%;
+	padding:0px 50px 0px 50px;
+	color:#123456;
+	height:40px;
+	text-align:center;
+	
+}
+.lens_help{
+	background-color:#eee;
+	border-radius:20px 20px 20px 20px;
+	margin:10px 10px 0px 0px;
+	width:55%;
+	padding:0px 40px 0px 70px;
+	font-size:18px;
+	float:right;
+	text-align:right;
+	
+}
+.vid{
+	float:right;
+	margin:10px 10px 0px 0px;
+	width:100%;
+	padding:0px 40px 0px 70px;
+	font-size:18px;
+	text-align:right;
+}
+.imp_lens{
+	clear:both;
+	width:60%;
+	height:auto;
+	background-color:#eee;
+	border-radius:20px 20px 20px 20px;
+	margin:20px 10px 20px 10px;
+	padding-left:20px;
+	
+}
+.suggest{
+	clear:both;
+	padding-top:20px;
+	text-align:center;
+}
+
+.bottom{
+	clear:both;
+	background-color:#123456;
+	max-width:100%;
+	padding-top:35px;
+	border-radius:10px 10px 0px 0px;
+	color:white;
+	display:block;
+	height:230px;
+}
+.bottom_left{
+	float:left;
+	background-color:inherit;
+	width:48%;
+	padding-left:20px;
+	height:120px;
+}
+.bottom_right{
+	float:right;
+	border-left:2px solid white;
+	background-color:inherit;
+	width:47%;
+	height:120px;
+	padding-left:20px;
+}
+.footer{
+	background-color:#00003f;
+	height:40px;
+	color:#FFF;
+	padding:5px 0px 5px 0px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+body {
+ 
+}
+a {
+  color: blue;
+  font: bold 3em/1.5 'Fjalla One', sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+}
+a:hover {
+  color: hotPink;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+  a {
+    background-color: #123456;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}
+
+.fa{
+	padding:15px;
+	font-size:50px;
+	width:15px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+}
+
+.fa-facebook{
+	color:white;
+	background:#3B5998;
+}
+.fa-instagram{
+	background:#125688;
+	color:white;
+}
+.fa-facebook:hover{
+	
+	animation-name:mirror;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+}
+@keyframes mirror{
+	0%{background:linear-gradient(120deg, white 0%,#3B5998);}
+	25%{background:linear-gradient(120deg,#3B5998 0%, white 25%,#3B5998);}
+	50%{background:linear-gradient(120deg,#3B5998 0%, white 50%,#3B5998);}
+	75%{background:linear-gradient(120deg,#3B5998 0%, white 75%,#3B5998);}
+	100%{background:linear-gradient(120deg, #3B5998,white 100%);}
+}
+
+.fa-instagram:hover{
+	animation-name:mirror1;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+}
+@keyframes mirror1{
+	0%{background:linear-gradient(120deg, white 0%,#125688);}
+	25%{background:linear-gradient(120deg,#125688 0%, white 25%,#125688);}
+	50%{background:linear-gradient(120deg,#125688 0%, white 50%,#125688);}
+	75%{background:linear-gradient(120deg,#125688 0%, white 75%,#125688);}
+	100%{background:linear-gradient(120deg, #125688,white 100%);}
+}
+
+.showmap{
+	text-decoration:none;
+	background:linear-gradient(blue,#123456,yellow);
+	border:none;
+	color:white;
+}
+
+@media screen and (max-width: 1125px){
+	
+	
+	
+}
+@media screen and (max-width: 1000px){
+	.linkage{display:none;}
+	.header{width:auto;}
+	
+	
+}
+@media screen and (max-width: 900px){
+	.bottom_right{width:43%;}
+	
+}
+@media screen and (max-width: 716px){
+	
+}
+@media screen and (max-width: 500px){
+	
+	.bottom_right{width:40%;}
+}

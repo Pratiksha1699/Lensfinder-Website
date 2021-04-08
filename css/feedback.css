@@ -1,0 +1,145 @@
+.header1{ 
+	width:27%;
+	padding-left:25px;
+	float:left;
+}
+p{
+	margin-top:-35px;
+	margin-bottom:50px;
+	color:#123456;
+}
+.header2{
+	float:right;
+	padding:10px 50px;
+	
+}
+
+.header{
+	background-color:white;
+	float:right;
+	margin:10px 0px 0px 0px;
+	border-radius:20px 0px 0px 20px;
+	font-size:18px;
+	-webkit-animation: fadein .2s;
+	animation-name:animate1;
+	animation-duration:1s;
+	animation-delay:0s;
+}
+.header2:hover{background:linear-gradient(#ddd,#fff,#ddd);}
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+body {
+
+}
+a {
+  color: blue;
+  font: bold 3em/1.5 'Fjalla One', sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+}
+a:hover {
+  color: hotPink;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+  a {
+    background-color: #123456;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}
+
+.feedback_title{
+	clear:both;
+	border-radius:20px 20px 20px 20px;
+	background-color:#eee;
+	color:#123456;
+	width:35%;
+	text-align:center;	
+}
+.line1{
+	clear:both;
+	font-size:20px;
+	font-family:'Pacifico', cursive;
+	color:#400080;
+}
+.line2{
+	clear:both;
+	margin-top:10px;
+	font-size:20px;
+	font-family:'Patua One', cursive;
+}
+.subject{
+	border:0;
+	background-color:#eee;
+	width:130px;
+	height:130px;
+	margin:10px;
+	font-family:'Patua One', cursive;
+	font-size:16px;
+	border-radius:20px 20px 20px 20px;
+}
+.subject:hover{
+	background-color:#123456;
+	color:white;
+	box-shadow:2px 5px 2px black;
+}
+form{
+	background-color: #eee;
+	padding:20px;
+	border-radius:10px 10px 10px 10px;
+	font-family:'Acme', cursive;
+}
+
+.Question textarea{
+	
+	border-radius: 20px 20px 20px 20px;
+	font-family:'Acme', cursive;
+}
+.btn1{
+	border:0;
+	color:white;
+	background-color: #59178f;
+	width:20%;
+	height:35px;
+	border-radius: 10px 10px 10px 10px;
+	margin:5px;
+}
+.Website input,.Product input{
+	padding:0px;
+	margin:20px;
+	margin-right:10px;
+}
+.Website h3,.Product h3{
+	background-color: #a974d4;
+	width:55%;
+	border-radius: 10px 0px 10px 0px;
+	padding:2px;
+}
+.Suggestion textarea{
+	
+	border-radius: 20px 20px 20px 20px;
+	font-family:'Acme', cursive;
+	color:#123456;
+}
+.Compliments textarea{
+	
+	border-radius: 20px 20px 20px 20px;
+	font-family:'Acme', cursive;
+}
+.Other textarea{
+	
+	border-radius: 20px 20px 20px 20px;
+	font-family:'Acme', cursive;
+}

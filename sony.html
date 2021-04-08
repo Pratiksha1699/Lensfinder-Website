@@ -1,0 +1,151 @@
+<html>
+<head>	
+	<link rel="stylesheet" type="text/css" href="css/macro.css"></link>
+	<title>Sony</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="css/aperture_24123.ico">
+		<link rel="apple-touch-icon" href="css/aperture_24123.png">
+		<link rel="icon" sizes="192x192" href="css/aperture_24123.png">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type=text/javascript>
+		function filtering(){
+			var input,filter,div,txtval,i,c;
+			input=document.getElementById('myinput');
+			filter=input.value.toUpperCase();
+		
+			div=document.getElementsByClassName("description");
+			
+			for (i=0;i<div.length;i++){
+				c=div[i].getElementsByTagName("b")[0];
+				txtval=c.textContent || c.innerText;
+				if(txtval.toUpperCase().indexOf(filter)>-1){
+					div[i].style.display="";
+					div[i].parentElement.style.display="";
+				} else {
+					div[i].style.display="none";
+					div[i].parentElement.style.display="none";
+				}
+			}
+
+		}
+		function displaytext(){
+			var abc,filter_div;
+			abc=document.getElementById('myinput');
+			if(abc.style.display=="none"){
+			abc.style.display="inline-block";
+			filter_div=document.getElementsByClassName('lens_filter');
+			filter_div[0].style.width="60%";
+			}
+			else{
+			abc.style.display="none";
+			filter_div=document.getElementsByClassName('lens_filter');
+			filter_div[0].style.width="20%";
+			}
+		}
+		function displaycontent(){
+			var filter_div1,r,input;
+			input=document.getElementsByTagName('input');
+			r=document.getElementById('check_btn');
+			r.style.display="block";
+			filter_div1=document.getElementsByClassName('lens_filter');
+			filter_div1[0].style.width="60%";
+
+		}
+		</script>
+		
+</head>
+<body>
+	<header>
+		<div>
+			<div class="header1">
+				<img src="css/final1.png" alt="logo" style="width:250px;height:80px;">
+				<br><br><br>
+				
+				<p>Your Guide To Camera Lenses</p>
+			</div>
+			<div class="header">
+			<!-- header section -->
+			<div class="header2"><a href="#">=</a></div>
+			<div class="header2"><a href="feedback.html">FEEDBACK</a></div>
+			<div class="header2"><a href="about.html">ABOUT</a></div>
+			<div class="header2"><a href="login.html">LOGIN</a></div>
+			<div class="header2"><a href="home.php">HOME</a></div>
+			
+			</div>
+		</div>
+	</header>
+
+<div class="mac">SONY</div>
+<div class="gallery1" style="width:60%;">
+	<div class="imgdiv imgdiv1"><img class="macimg" src="css/img/sony1.jpg" width="250px" height="180px"/></div>
+	<div class="imgdiv imgdiv2"><img class="macimg" src="css/img/sony2.jpg" width="200px" height="160px"/></div>
+	<div class="imgdiv imgdiv3"><img class="macimg" src="css/img/sony3.jpg" width="150px" height="120px"/></div><br>
+	<div class="imgdiv imgdiv4"><img class="macimg" src="css/img/sony4.jpg" width="300px" height="200px"/></div>
+	<div class="imgdiv imgdiv5"><img class="macimg" src="css/img/sony5.jpg" width="340px" height="230px"/></div>
+</div>
+</div>
+<div class="Mac_content">
+	Sony lenses comprise of E, X and RF mounts. One of the leading camera makers out there. They have a range of amazing lenses/
+</div>
+
+<div class="lens_filter">
+	<button class="btn" onclick="displaytext()">Filter</button><input type="text" id="myinput" onkeyup="filtering()" style="display:none;width:60%">
+	
+</div>
+
+
+
+<div class="Page">
+<div class="lens_des canon"><img class="lens_img" src="css/img/venus_optics.jpg" width="130px" height="200px" style="float:left;"/>
+<div class="description"><b>Venus Optics Laowa 24mm</b><br><h2>INR 127255</h2><button class="btn1" onclick="location.href='Laoma-24mm.html'">Learn More >></button>
+</div>
+</div>
+<div class="lens_des canon"><img class="lens_img" src="css/img/canon_telephoto.jpg" width="130px" height="200px" style="float:left;"/>
+<div class="description"><b>Canon EF 70-300mm</b><br><h2>INR 22000</h2><button class="btn1" onclick="location.href='Canon-70-300mm.html'">Learn More >></button>
+</div>
+</div>
+
+
+<div class="lens_des venus">
+<img class="lens_img" src="css/img/ef55-250.jpg" width="130px" height="200px" style="float:left;"/>
+<div class="description"><b>Canon EF 55-250mm</b><br><h2>INR 12500</h2><button class="btn1" onclick="location.href='Canon-55-250mm.html'">Learn More >></button>
+</div>
+</div>
+
+
+<div class="lens_des venus"><img class="lens_img" src="css/img/pic5-1.jpg" width="130px" height="200px" style="float:left;"/>
+<div class="description"><b>Nikon AF X 35mm</b><br><h2>INR 25000</h2><button class="btn1" onclick="location.href='Nikon-AF-X-35mm.html'">Learn More >></button>
+</div>
+</div>
+<div class="lens_des venus"><img class="lens_img" src="css/img/nikon70.jpg" width="130px" height="200px" style="float:left;"/>
+<div class="description"><b>Nikon AF 70-300mm</b><br><h2>INR 21000</h2><button class="btn1" onclick="location.href='Nikon-AF-70-300mm.html'">Learn More >></button>
+</div>
+</div>
+
+
+<!-- Bottom of the page for footer and contact information -->
+		<div class="bottom">
+			<hr width="90%">
+			<div class="bottom_left">
+				
+				<h3>About Us:</h3>
+				Contact Us: 9920353609
+			</div>
+			<div class="bottom_right">
+			<h3>Follow Us on:</h3>
+			<!-- adding social media icons -->
+
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			</div>
+			
+		</div>
+
+		<div class="footer">
+				<center><h4>Copyright &copy; LensFinder.com | All Rights Reserved</h4></center>
+		</div>
+
+</body>
+</html>

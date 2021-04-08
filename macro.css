@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+body{
+	overflow-X:hidden;
+}
+
+.header1{
+	margin-top: 15px; 
+	width:200px;
+	padding-left:2px;
+	float:left;
+}
+p{
+	margin-top:-35px;
+	color:#123456;
+}
+.header2{
+	float:right;
+	margin:10px 30px;
+	
+}
+
+.header{
+	background-color:white;
+	float:right;
+	margin:10px 0px 0px 0px;
+	border-radius:20px 0px 0px 20px;
+	width:670px;
+	font-size:18px;
+	-webkit-animation: fadein .2s;
+	animation-name:animate1;
+	animation-duration:1s;
+	animation-timing-function:-in;
+	animation-delay:0s;
+}
+
+
+
+
+
+a {
+  color: blue;
+  font: bold 3em/1.5 'Fjalla One', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+}
+a:hover {
+  color: hotPink;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+  a {
+    background-color: #123456;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}
+
+.mac{
+	color:#123456;
+	background-color:#eee;
+	width:30%;
+	border-radius:20px 20px 20px 20px;
+	clear:both;
+	text-align:center;
+	padding:4px;
+	font-weight:bold;
+	font-size:22px;
+}
+.gallery1{
+	clear:both;
+	padding:5px;
+	width:20%;
+	padding-top:10px;
+	margin-left:10%;
+	margin-top:2%;
+	
+}
+.macimg{
+	border-radius:25px 25px 25px 25px;
+}
+.imgdiv{
+	padding:3px;
+	position:relative;
+}
+.imgdiv1{
+	margin-left:15%;
+	width:250px;
+	height:180px;margin-top:2%;
+
+}
+.imgdiv2{
+	margin-top:4%;	
+}
+.imgdiv3{
+	margin-top:8%;
+	width:150px; 
+	height:100px;	
+}
+.imgdiv4{
+	margin-left:7%;
+	width:300px; 	height:200px;	
+}
+.Mac_content{
+	border-radius:35px 35px 35px 35px;
+	background-color:#eee;
+	color:#123456;
+	width:60%;
+	padding:10px;
+	margin-top:30px;
+	padding-left:10%;
+	font-size:20px;
+}
+
+.lens_filter{
+	color:white;
+	background-color:#123456;
+	width:20%;
+	border-radius:20px 20px 20px 20px;
+	clear:both;
+	text-align:center;
+	padding-left:10px;
+	margin-top:30px;
+	margin-left:10%;
+}
+
+.btn{
+	border:0px;
+	background-color:#123456;
+	color:white;
+	height:30px;
+	font-weight:bold;
+	font-size:20px;
+	margin:2%;
+	border-radius:5px 5px 5px 5px;
+	-webkit-transition:background;
+	-webkit-transition-timing-function:cubic-beizer(0,0,1,1);
+	transition:background;
+	transition-timing-function:cubic-beizer(0,0,1,1);
+}
+
+.btn:hover{
+	background:-webkit-radial-gradient(circle, yellow,orange,hotpink);
+	background:radial-gradient(circle, yellow,orange,hotpink);
+	color:#123456;
+}
+.lens_img:hover{
+	filter:brightness(120%);
+	filter:saturate(2.5);
+	box-shadow:3px 3px 3px 3px #123456;
+	transform:scale(1.1,1.1);
+}
+.lens_des{
+	background-color:#eee;
+	width:50%;
+	border-radius:20px 20px 20px 20px;
+	clear:both;
+	padding-left:10%;
+	padding-top:1%;
+	padding-bottom:1%;
+	margin-top:30px;
+	margin-left:10%;
+	height:200px;
+}
+
+.description{
+	color:#123456;
+	float:left;
+	font-size:20px;
+	padding-left:5%;
+}
+
+.btn1{
+	border:0px;
+	background-color:#123456;
+	color:white;
+	height:30px;
+	font-size:14px;
+	margin:2%;
+	padding-left:20%;
+	padding-right:20%;
+	border-radius:15px 15px 15px 15px;
+}
+.btn1:hover{background-color:#123987;}
+
+.pages{
+	color:#123456;
+	font-size:18px;
+	text-align:center;
+	width:100%;
+	margin:3%;
+
+}
+.circles{
+	border-radius:50%;
+	padding:5px;
+	color:white;
+	background-color:#123456;
+}
+.bottom{
+	clear:both;
+	background-color:#123456;
+	width:100%;
+	padding-top:35px;
+	border-radius:10px 10px 0px 0px;
+	color:white;
+	display:block;
+	height:200px;
+	font-family:'Bitter', serif;
+}
+.bottom_left{
+	float:left;
+	background-color:inherit;
+	width:45%;
+	padding-left:20px;
+}
+.bottom_right{
+	float:left;
+	border-left:2px solid white;
+	background-color:inherit;
+	width:45%;
+	padding-left:20px;
+}
+.footer{
+	background-color:#00003f;
+	height:40px;
+	color:#FFF;
+	padding:5px 0px 5px 0px;
+}
+
+.fa{
+	padding:15px;
+	font-size:20px;
+	width:15px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+}
+
+.fa-facebook{
+	color:white;
+	background:#3B5998;
+}
+.fa-instagram{
+	background:#125688;
+	color:white;
+}
+.fa-facebook:hover{
+	
+	animation-name:mirror;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+}
+@keyframes mirror{
+	0%{background:linear-gradient(120deg, white 0%,#3B5998);}
+	25%{background:linear-gradient(120deg,#3B5998 0%, white 25%,#3B5998);}
+	50%{background:linear-gradient(120deg,#3B5998 0%, white 50%,#3B5998);}
+	75%{background:linear-gradient(120deg,#3B5998 0%, white 75%,#3B5998);}
+	100%{background:linear-gradient(120deg, #3B5998,white 100%);}
+}
+.fa-instagram:hover{
+	animation-name:mirror1;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in;
+	animation-delay:0s;
+}
+@keyframes mirror1{
+	0%{background:linear-gradient(120deg, white 0%,#125688);}
+	25%{background:linear-gradient(120deg,#125688 0%, white 25%,#125688);}
+	50%{background:linear-gradient(120deg,#125688 0%, white 50%,#125688);}
+	75%{background:linear-gradient(120deg,#125688 0%, white 75%,#125688);}
+	100%{background:linear-gradient(120deg, #125688,white 100%);}
+}
+
+.caption1{
+	
+	opacity:0;
+	z-index:1;
+	background:rgba(0,0,0,0.2);
+	animation-name:zoom;
+}
+@keyframes zoom{ 
+from { transform:scale(1);
+}
+to{ transform:scale(1.5); }
+
+}
+.detail{
+	color:#fff;
+	position:absolute;
+	top:0%;
+	left:0%;
+	transform:translate(0%,0%);
+	width:100%;
+	height:100%;
+	border-radius:25px 25px 25px 25px;	
+	z-index:1;
+	background:rgba(0,0,0,0.2);
+	text-align:center;
+}
+
+.caption1:hover{
+	opacity:1;
+	
+	}
+.detail:hover{
+	opacity:1;
+	animation-name:zoom;
+	box-shadow:5px 5px 4px black;
+	
+	transition:.5s ease;
+}
+.imgdiv1:hover{animation-name:zoom;
+	transform:scale(1.2,1.2);
+	z-index:1;
+	transition:.5s ease;
+
+}
+.imgdiv2:hover{animation-name:zoom;
+	transform:scale(1.2,1.2);
+	z-index:1;
+	transition:.5s ease;
+}
+.imgdiv3:hover{animation-name:zoom;
+	transform:scale(1.2,1.2);
+	z-index:1;
+	transition:.5s ease;
+}
+.imgdiv4:hover{animation-name:zoom;
+	transform:scale(1.2,1.2);
+	z-index:1;
+	transition:.5s ease;
+}
+.imgdiv5:hover{animation-name:zoom;
+	transform:scale(1.2,1.2);
+	z-index:1;
+	transition:.5s ease;
+}
+.radio_btn{
+	font-size:20px;
+	font-weight:bold;
+}
+@media screen and (min-width: 1408px){
+	.gallery1{width:79%;}
+}
+@media screen and (min-width: 1426px){
+	.gallery1{width:70%;}
+}

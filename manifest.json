@@ -1,0 +1,20 @@
+{
+  "short_name": "Lensfinder",
+  "name": "JasonPratiksha",
+  "icons": [
+    {
+      "src": "css/final1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "search.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "home.php",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  
+}
