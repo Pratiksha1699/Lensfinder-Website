@@ -1,8 +1,8 @@
 <?php
 	session_start();
 	$name =$_SESSION['username'];
-	$oldpass = $_POST['pass'];
-	$password = $_POST['newPass'];
+	$oldpass = md5($_POST['pass']);
+	$password = md5($_POST['newPass']);
 	$host = "localhost";
 	$dbUsrname = "root";
 	$dbPass = "";

@@ -231,13 +231,13 @@
 					<div class="login_content">
 					<form onsubmit="return(validate());" name="changepassForm" action="changePass.php" method="post">
 					<label style="padding-left:30%;">Password<br>
-					<input type="password" name="pass"></label><br><br>
+					<input type="password" name="pass" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{7,}" required></label><br><br>
 					
 					<label style="padding-left:30%;">New Password<br>
-					<input type="password" name="newPass" id="password"></label><br><br>
+					<input type="password" name="newPass" id="password" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{7,}" required></label><br><br>
 					
 					<label style="padding-left:30%;">Confirm New Password<br>
-					<input type="password" name="newPassC" id="password1"></label><br><br>
+					<input type="password" name="newPassC" id="password1" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{7,}" required></label><br><br>
 					<input class="btn1 btn" type="submit" name="Change" value="change">
 					</form>
 					
